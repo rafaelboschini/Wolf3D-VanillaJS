@@ -1,19 +1,39 @@
 <html>
-	<head>
-		<meta charset="utf-8" />
-		<title>Wolf3D Engine JS</title>
-		<link type="text/css" rel="stylesheet" href="style.css">
-	</head>
-	<body onload="init()">
-		<div id="screen">
-			<canvas id="myCanvas"></canvas>	
-			<div class="mapname"></div>
-			<div id="ceiling"></div>
-			<div id="floor"></div>
-		</div>
-		
-		<script src="lib/playerModel.js"></script>
-		<script src="lib/mapModel.js"></script>
-		<script src="lib/core.js" defer></script>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="Rafael Boschini" />
+    <meta name="robots" content="index, follow" />
+    <meta
+      name="description"
+      content="JavaScript-based Raycasting Algorithm showcasing a simulation of 3D environments in a 2D canvas. Explore maps, player movement, and elements inspired by Wolfenstein 3D."
+    />
+    <meta
+      name="keywords"
+      content="Wolf3D Engine JS, JavaScript, Raycasting, 3D Environment Simulation, Wolfenstein 3D, John Carmack, John Romero"
+    />
+    <title>Wolf3D Engine JS</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link type="text/css" rel="stylesheet" href="style.css" />
+  </head>
+  <body onload="init()">
+    <div id="screen">
+      <canvas id="myCanvas"></canvas>
+      <div class="mapname"></div>
+      <div id="ceiling"></div>
+      <div id="floor"></div>
+    </div>
+    <div class="overlay" id="overlay"></div>
+    <div class="popup" id="popup">
+      <div class="popup-content">
+        <h2 class="popup-title"></h2>
+        <p class="popup-text"></p>
+        <button class="close-button" onclick="closePopup()">Close</button>
+      </div>
+    </div>
+    <script src="lib/playerModel.js"></script>
+    <script src="lib/mapModel.js"></script>
+    <script src="lib/core.js" defer></script>
+  </body>
 </html>
