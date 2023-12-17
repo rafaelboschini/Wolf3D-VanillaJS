@@ -2,6 +2,9 @@
 
 Welcome to the Wolf3D Engine JS, a example of JavaScript-based Raycasting Algorithm! 🕹️
 
+## Live Demo
+https://rafaelboschini.github.io/Wolf3D-VanillaJS/
+
 ## Project Overview
 
 I got hooked on this project because I was totally into games like Wolfenstein and Doom when I was a kid.
